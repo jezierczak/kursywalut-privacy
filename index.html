@@ -16,13 +16,16 @@
   p, li { margin:8px 0; }
   a { color:var(--accent); }
   .muted { color:var(--muted); font-size:.9rem; }
-  nav a { margin-right:16px; }
+  nav { display:flex; flex-wrap:wrap; gap:4px 16px; }
+  nav a { text-decoration:none; }
+  nav a.active { font-weight:700; text-decoration:underline; }
+  section[hidden] { display:none; }
 </style>
 </head>
 <body>
 <main>
 
-<nav class="muted"><a href="#en">English</a><a href="#pl">Polski</a></nav>
+<nav class="muted" id="langnav"><a href="#en">English</a><a href="#pl">Polski</a><a href="#es">Español</a><a href="#pt">Português (Brasil)</a><a href="#de">Deutsch</a><a href="#fr">Français</a><a href="#it">Italiano</a><a href="#tr">Türkçe</a><a href="#id">Bahasa Indonesia</a><a href="#ru">Русский</a><a href="#hi">हिन्दी</a><a href="#cs">Čeština</a><a href="#uk">Українська</a><a href="#ja">日本語</a><a href="#ko">한국어</a><a href="#vi">Tiếng Việt</a></nav>
 
 <section id="en">
 <h1>Privacy Policy</h1>
@@ -112,6 +115,672 @@
 <p><a href="mailto:jezierczak@gmail.com">jezierczak@gmail.com</a></p>
 </section>
 
+<section id="es" lang="es">
+<h1>Política de privacidad</h1>
+<p class="muted">Fast Currency Calculator · app para Android · Última actualización: 7 de octubre de 2026</p>
+<p class="muted"><em>Traducción. En caso de discrepancia, prevalece la versión en inglés.</em></p>
+
+<p>Esta política describe cómo la app <strong>Fast Currency Calculator</strong> (paquete <code>com.finance.jarek.kursywalut</code>, la «app») trata la información. La app está publicada por Jarosław Jezierczak («yo», «desarrollador»).</p>
+
+<h2>Resumen</h2>
+<p>La app no tiene cuentas, inicio de sesión ni servidor propio. No recojo tu nombre, correo electrónico, número de teléfono, ubicación precisa ni otros datos personales. Los únicos datos que salen de tu dispositivo se describen abajo y los tratan terceros (proveedores de cotizaciones, Google AdMob y Google Play).</p>
+
+<h2>Datos almacenados en tu dispositivo</h2>
+<p>Tus divisas favoritas, la divisa base, las alertas de cotización, el historial de conversiones (las últimas 20 por par de divisas), los ajustes de la app (tema, fuentes de cotizaciones, opciones del gráfico) y las cotizaciones descargadas se guardan solo en tu dispositivo. No tengo acceso a ellos. Se borran al desinstalar la app o borrar sus datos.</p>
+
+<h2>Fuentes de cotizaciones</h2>
+<p>Para mostrar cotizaciones, la app descarga datos de servicios públicos: Frankfurter / Banco Central Europeo (api.frankfurter.dev), Banco Nacional de Polonia (api.nbp.pl) y un conjunto público de datos de divisas servido por jsDelivr (cdn.jsdelivr.net). Como toda petición de internet, esto revela tu dirección IP a esos servicios. La app solo envía los códigos de divisa necesarios y nada que te identifique.</p>
+
+<h2>Publicidad (Google AdMob)</h2>
+<p>La app muestra anuncios de Google AdMob. AdMob puede recopilar y usar, entre otros, el identificador de publicidad de tu dispositivo, la dirección IP (de la que puede deducirse una ubicación aproximada), datos de interacción con la app y datos de diagnóstico y rendimiento, para mostrar y medir anuncios y prevenir fraudes. En el EEE, el Reino Unido y otras regiones donde se exige, la app pide tu consentimiento mediante la plataforma de mensajes para usuarios de Google antes de mostrar anuncios personalizados, y puedes cambiar tu decisión después. Puedes restablecer o eliminar tu identificador de publicidad en los ajustes de Android (Ajustes → Privacidad → Anuncios). Más información: <a href="https://policies.google.com/technologies/partner-sites?hl=es">Cómo usa Google la información de sitios o apps que usan sus servicios</a> y <a href="https://policies.google.com/privacy?hl=es">Política de privacidad de Google</a>.</p>
+<p>Los anuncios pueden eliminarse de forma permanente con una compra única en la app.</p>
+
+<h2>Compras (Google Play Billing)</h2>
+<p>La compra única «PRO – sin anuncios» la procesa Google Play. No recibo tus datos de pago. La app solo consulta a Google Play si la compra se ha realizado, para restaurarla tras reinstalar o en un dispositivo nuevo.</p>
+
+<h2>Detección de país (viaje al extranjero)</h2>
+<p>Para sugerir una divisa base en el primer inicio y ofrecerte la divisa local cuando viajas, la app lee el código de país de tu tarjeta SIM y de la red móvil a la que estás conectado (con la información de telefonía de Android). La app no usa GPS ni pide ningún permiso de ubicación. Esto ocurre solo en tu dispositivo: el código de país nunca se envía ni a mí ni a ningún servidor, y lo único que se guarda es de qué país ya te ha preguntado la app, para no preguntar dos veces. Si no estás conectado a una red móvil, no se detecta nada.</p>
+
+<h2>Notificaciones y widgets</h2>
+<p>Si creas una alerta de cotización, la app comprueba periódicamente la cotización en segundo plano y muestra una notificación al alcanzarse el nivel elegido. El permiso de notificaciones es opcional. Los widgets de la pantalla de inicio muestran la cotización de una divisa elegida; sus ajustes se guardan localmente.</p>
+
+<h2>Menores</h2>
+<p>La app no está dirigida a menores de 13 años y no recojo datos de menores de forma consciente.</p>
+
+<h2>Tus derechos</h2>
+<p>No conservo datos personales tuyos, así que no hay nada que pueda facilitarte, corregir o borrar. Los datos que trata Google (anuncios, compras) se rigen por las políticas de Google y puedes ejercer tus derechos ante Google, también desde los ajustes de privacidad de tu cuenta de Google. En el EEE/Reino Unido también puedes contactar con tu autoridad local de protección de datos.</p>
+
+<h2>Solo información, no asesoramiento financiero</h2>
+<p>Las cotizaciones de la app son solo informativas. Pueden estar retrasadas o diferir de las que ofrecen bancos y casas de cambio, y no constituyen asesoramiento financiero ni una oferta de cambio de divisas.</p>
+
+<h2>Cambios en esta política</h2>
+<p>Si cambia el tratamiento de datos de la app (por ejemplo, con nuevas funciones), actualizaré esta página y la fecha de arriba.</p>
+
+<h2>Contacto</h2>
+<p><a href="mailto:jezierczak@gmail.com">jezierczak@gmail.com</a></p>
+</section>
+
+<section id="pt" lang="pt-BR">
+<h1>Política de privacidade</h1>
+<p class="muted">Fast Currency Calculator · app para Android · Última atualização: 7 de outubro de 2026</p>
+<p class="muted"><em>Tradução. Em caso de divergência, prevalece a versão em inglês.</em></p>
+
+<p>Esta política descreve como o app <strong>Fast Currency Calculator</strong> (pacote <code>com.finance.jarek.kursywalut</code>, o «app») trata informações. O app é publicado por Jarosław Jezierczak («eu», «desenvolvedor»).</p>
+
+<h2>Resumo</h2>
+<p>O app não tem contas, login nem servidor próprio. Não coleto seu nome, e-mail, número de telefone, localização precisa nem outros dados pessoais. Os únicos dados que saem do seu dispositivo estão descritos abaixo e são tratados por terceiros (provedores de cotações, Google AdMob e Google Play).</p>
+
+<h2>Dados armazenados no seu dispositivo</h2>
+<p>Suas moedas favoritas, a moeda base, os alertas de cotação, o histórico de conversões (as últimas 20 por par de moedas), as configurações do app (tema, fontes de cotações, opções do gráfico) e as cotações baixadas ficam armazenados apenas no seu dispositivo. Não tenho acesso a eles. São apagados ao desinstalar o app ou limpar seus dados.</p>
+
+<h2>Fontes de cotações</h2>
+<p>Para mostrar as cotações, o app baixa dados de serviços públicos: Frankfurter / Banco Central Europeu (api.frankfurter.dev), Banco Nacional da Polônia (api.nbp.pl) e um conjunto público de dados de moedas servido pelo jsDelivr (cdn.jsdelivr.net). Como qualquer requisição de internet, isso revela seu endereço IP a esses serviços. O app envia apenas os códigos de moeda necessários e nada que o identifique.</p>
+
+<h2>Publicidade (Google AdMob)</h2>
+<p>O app exibe anúncios do Google AdMob. O AdMob pode coletar e usar, entre outros, o ID de publicidade do dispositivo, o endereço IP (do qual pode ser deduzida uma localização aproximada), dados de interação com o app e dados de diagnóstico e desempenho, para exibir e medir anúncios e prevenir fraudes. No EEE, no Reino Unido e em outras regiões onde exigido, o app pede seu consentimento pela plataforma de mensagens para usuários do Google antes de exibir anúncios personalizados, e você pode mudar sua escolha depois. Você pode redefinir ou excluir seu ID de publicidade nas configurações do Android (Configurações → Privacidade → Anúncios). Mais informações: <a href="https://policies.google.com/technologies/partner-sites?hl=pt-BR">Como o Google usa informações de sites ou apps que usam seus serviços</a> e <a href="https://policies.google.com/privacy?hl=pt-BR">Política de Privacidade do Google</a>.</p>
+<p>Os anúncios podem ser removidos permanentemente com uma compra única no app.</p>
+
+<h2>Compras (Google Play Billing)</h2>
+<p>A compra única «PRO – sem anúncios» é processada pelo Google Play. Não recebo seus dados de pagamento. O app apenas consulta o Google Play para saber se a compra foi feita, para restaurá-la após reinstalar ou em um novo dispositivo.</p>
+
+<h2>Detecção de país (viagem ao exterior)</h2>
+<p>Para sugerir uma moeda base na primeira abertura e oferecer a moeda local quando você viaja, o app lê o código do país do seu chip SIM e da rede móvel à qual você está conectado (pelas informações de telefonia do Android). O app não usa GPS nem pede nenhuma permissão de localização. Isso acontece apenas no seu dispositivo: o código do país nunca é enviado a mim nem a qualquer servidor, e o único dado salvo é sobre qual país o app já perguntou, para não perguntar duas vezes. Se você não estiver conectado a uma rede móvel, nada é detectado.</p>
+
+<h2>Notificações e widgets</h2>
+<p>Se você criar um alerta de cotação, o app verifica a cotação periodicamente em segundo plano e mostra uma notificação quando o nível escolhido é atingido. A permissão de notificações é opcional. Os widgets da tela inicial mostram a cotação de uma moeda escolhida; suas configurações ficam armazenadas localmente.</p>
+
+<h2>Crianças</h2>
+<p>O app não é direcionado a menores de 13 anos e não coleto conscientemente dados de crianças.</p>
+
+<h2>Seus direitos</h2>
+<p>Não mantenho dados pessoais seus, então não há nada para eu fornecer, corrigir ou excluir. Os dados tratados pelo Google (anúncios, compras) estão sujeitos às políticas do Google e você pode exercer seus direitos junto ao Google, inclusive pelas configurações de privacidade da sua conta Google. No EEE/Reino Unido, você também pode contatar a autoridade local de proteção de dados.</p>
+
+<h2>Apenas informação, não aconselhamento financeiro</h2>
+<p>As cotações no app são apenas informativas. Podem estar atrasadas ou diferir das oferecidas por bancos e casas de câmbio, e não constituem aconselhamento financeiro nem oferta de câmbio.</p>
+
+<h2>Alterações nesta política</h2>
+<p>Se o tratamento de dados do app mudar (por exemplo, com novos recursos), atualizarei esta página e a data acima.</p>
+
+<h2>Contato</h2>
+<p><a href="mailto:jezierczak@gmail.com">jezierczak@gmail.com</a></p>
+</section>
+
+<section id="de" lang="de">
+<h1>Datenschutzerklärung</h1>
+<p class="muted">Fast Currency Calculator · Android-App · Zuletzt aktualisiert: 7. Oktober 2026</p>
+<p class="muted"><em>Übersetzung. Bei Abweichungen gilt die englische Fassung.</em></p>
+
+<p>Diese Erklärung beschreibt, wie die App <strong>Fast Currency Calculator</strong> (Paket <code>com.finance.jarek.kursywalut</code>, die „App“) Informationen verarbeitet. Die App wird von Jarosław Jezierczak („ich“, „Entwickler“) veröffentlicht.</p>
+
+<h2>Zusammenfassung</h2>
+<p>Die App hat keine Konten, keine Anmeldung und keinen eigenen Server. Ich erhebe weder Ihren Namen, Ihre E-Mail-Adresse, Telefonnummer, genauen Standort noch sonstige personenbezogene Daten. Die einzigen Daten, die Ihr Gerät verlassen, sind unten beschrieben und werden von Dritten verarbeitet (Kursanbieter, Google AdMob und Google Play).</p>
+
+<h2>Auf Ihrem Gerät gespeicherte Daten</h2>
+<p>Ihre Lieblingswährungen, die Basiswährung, Kursalarme, der Umrechnungsverlauf (die letzten 20 pro Währungspaar), die App-Einstellungen (Design, Kursquellen, Diagrammoptionen) und die heruntergeladenen Wechselkurse werden nur lokal auf Ihrem Gerät gespeichert. Ich habe keinen Zugriff darauf. Sie werden beim Deinstallieren der App oder beim Löschen ihrer Daten entfernt.</p>
+
+<h2>Kursquellen</h2>
+<p>Um Kurse anzuzeigen, lädt die App Daten von öffentlichen Diensten: Frankfurter / Europäische Zentralbank (api.frankfurter.dev), Polnische Nationalbank (api.nbp.pl) und einen öffentlichen Währungsdatensatz über jsDelivr (cdn.jsdelivr.net). Wie jede Internetanfrage macht dies Ihre IP-Adresse für diese Dienste sichtbar. Die App sendet nur die benötigten Währungscodes und nichts, was Sie identifiziert.</p>
+
+<h2>Werbung (Google AdMob)</h2>
+<p>Die App zeigt Werbung von Google AdMob. AdMob kann unter anderem die Werbe-ID Ihres Geräts, die IP-Adresse (aus der sich ein ungefährer Standort ableiten lässt), Daten zur App-Nutzung sowie Diagnose- und Leistungsdaten erheben und verwenden, um Werbung auszuliefern und zu messen und um Betrug zu verhindern. Im EWR, im Vereinigten Königreich und in weiteren Regionen, in denen dies vorgeschrieben ist, holt die App vor personalisierter Werbung Ihre Einwilligung über Googles User Messaging Platform ein; Ihre Auswahl können Sie später ändern. Die Werbe-ID können Sie in den Android-Einstellungen zurücksetzen oder löschen (Einstellungen → Datenschutz → Werbung). Weitere Informationen: <a href="https://policies.google.com/technologies/partner-sites?hl=de">Wie Google Informationen von Websites oder Apps verwendet, die seine Dienste nutzen</a> und <a href="https://policies.google.com/privacy?hl=de">Datenschutzerklärung von Google</a>.</p>
+<p>Die Werbung lässt sich mit einem einmaligen In-App-Kauf dauerhaft entfernen.</p>
+
+<h2>Käufe (Google Play Billing)</h2>
+<p>Der einmalige Kauf „PRO – ohne Werbung“ wird von Google Play abgewickelt. Ich erhalte Ihre Zahlungsdaten nicht. Die App fragt bei Google Play nur ab, ob der Kauf erfolgt ist, um ihn nach einer Neuinstallation oder auf einem neuen Gerät wiederherzustellen.</p>
+
+<h2>Ländererkennung (Auslandsreise)</h2>
+<p>Um beim ersten Start eine Basiswährung vorzuschlagen und Ihnen auf Reisen die Landeswährung anzubieten, liest die App den Ländercode Ihrer SIM-Karte und des Mobilfunknetzes, mit dem Sie verbunden sind (über die Telefonie-Informationen von Android). Die App nutzt kein GPS und fordert keine Standortberechtigung an. Das geschieht nur auf Ihrem Gerät: Der Ländercode wird weder an mich noch an einen Server gesendet, gespeichert wird lediglich, zu welchem Land die App bereits gefragt hat, damit sie nicht zweimal fragt. Sind Sie nicht mit einem Mobilfunknetz verbunden, wird nichts erkannt.</p>
+
+<h2>Benachrichtigungen und Widgets</h2>
+<p>Wenn Sie einen Kursalarm anlegen, prüft die App den Kurs regelmäßig im Hintergrund und zeigt eine Benachrichtigung, sobald die gewählte Schwelle erreicht ist. Die Benachrichtigungsberechtigung ist optional. Widgets auf dem Startbildschirm zeigen den Kurs einer gewählten Währung; ihre Einstellungen werden lokal gespeichert.</p>
+
+<h2>Kinder</h2>
+<p>Die App richtet sich nicht an Kinder unter 13 Jahren, und ich erhebe wissentlich keine Daten von Kindern.</p>
+
+<h2>Ihre Rechte</h2>
+<p>Ich speichere keine personenbezogenen Daten über Sie, daher kann ich nichts auskunftsweise herausgeben, berichtigen oder löschen. Von Google verarbeitete Daten (Werbung, Käufe) unterliegen den Richtlinien von Google, und Ihre Rechte hierzu können Sie gegenüber Google ausüben, auch über die Datenschutzeinstellungen Ihres Google-Kontos. Im EWR/Vereinigten Königreich können Sie sich außerdem an Ihre örtliche Datenschutzbehörde wenden.</p>
+
+<h2>Nur zur Information, keine Finanzberatung</h2>
+<p>Die Wechselkurse in der App dienen nur zur Information. Sie können verzögert sein oder von den Kursen der Banken und Wechselstuben abweichen und sind weder Finanzberatung noch ein Angebot zum Währungstausch.</p>
+
+<h2>Änderungen dieser Erklärung</h2>
+<p>Ändert sich die Datenverarbeitung der App (z. B. durch neue Funktionen), aktualisiere ich diese Seite und das obige Datum.</p>
+
+<h2>Kontakt</h2>
+<p><a href="mailto:jezierczak@gmail.com">jezierczak@gmail.com</a></p>
+</section>
+
+<section id="fr" lang="fr">
+<h1>Politique de confidentialité</h1>
+<p class="muted">Fast Currency Calculator · application Android · Dernière mise à jour : 7 octobre 2026</p>
+<p class="muted"><em>Traduction. En cas de divergence, la version anglaise prévaut.</em></p>
+
+<p>Cette politique décrit comment l’application <strong>Fast Currency Calculator</strong> (paquet <code>com.finance.jarek.kursywalut</code>, l’« application ») traite les informations. L’application est publiée par Jarosław Jezierczak (« je », « développeur »).</p>
+
+<h2>Résumé</h2>
+<p>L’application n’a ni comptes, ni connexion, ni serveur propre. Je ne collecte ni votre nom, ni votre adresse e-mail, ni votre numéro de téléphone, ni votre position précise, ni aucune autre donnée personnelle. Les seules données qui quittent votre appareil sont décrites ci-dessous et sont traitées par des tiers (fournisseurs de cours, Google AdMob et Google Play).</p>
+
+<h2>Données stockées sur votre appareil</h2>
+<p>Vos devises favorites, la devise de base, les alertes de cours, l’historique des conversions (les 20 dernières par paire de devises), les réglages de l’application (thème, sources de cours, options du graphique) et les cours téléchargés sont stockés uniquement sur votre appareil. Je n’y ai pas accès. Ils sont supprimés lorsque vous désinstallez l’application ou effacez ses données.</p>
+
+<h2>Sources des cours</h2>
+<p>Pour afficher les cours, l’application télécharge des données depuis des services publics : Frankfurter / Banque centrale européenne (api.frankfurter.dev), Banque nationale de Pologne (api.nbp.pl) et un jeu de données de devises public diffusé par jsDelivr (cdn.jsdelivr.net). Comme toute requête internet, cela révèle votre adresse IP à ces services. L’application envoie uniquement les codes de devise nécessaires et rien qui vous identifie.</p>
+
+<h2>Publicité (Google AdMob)</h2>
+<p>L’application affiche des publicités fournies par Google AdMob. AdMob peut collecter et utiliser, entre autres, l’identifiant publicitaire de votre appareil, l’adresse IP (dont une position approximative peut être déduite), des données d’interaction avec l’application et des données de diagnostic et de performance, afin de diffuser et mesurer les publicités et de prévenir la fraude. Dans l’EEE, au Royaume-Uni et dans d’autres régions où cela est requis, l’application demande votre consentement via la plateforme de messages aux utilisateurs de Google avant d’afficher des publicités personnalisées, et vous pouvez modifier votre choix ultérieurement. Vous pouvez réinitialiser ou supprimer votre identifiant publicitaire dans les paramètres Android (Paramètres → Confidentialité → Annonces). Plus d’informations : <a href="https://policies.google.com/technologies/partner-sites?hl=fr">Comment Google utilise les informations des sites ou applications qui utilisent ses services</a> et <a href="https://policies.google.com/privacy?hl=fr">Politique de confidentialité de Google</a>.</p>
+<p>Les publicités peuvent être supprimées définitivement par un achat unique dans l’application.</p>
+
+<h2>Achats (Google Play Billing)</h2>
+<p>L’achat unique « PRO – sans publicité » est traité par Google Play. Je ne reçois pas vos données de paiement. L’application vérifie seulement auprès de Google Play si l’achat a été effectué, afin de le restaurer après une réinstallation ou sur un nouvel appareil.</p>
+
+<h2>Détection du pays (voyage à l’étranger)</h2>
+<p>Pour proposer une devise de base au premier lancement et vous suggérer la devise locale en voyage, l’application lit le code pays de votre carte SIM et du réseau mobile auquel vous êtes connecté (via les informations de téléphonie d’Android). L’application n’utilise pas le GPS et ne demande aucune autorisation de localisation. Cela se passe uniquement sur votre appareil : le code pays n’est jamais envoyé ni à moi ni à un serveur, et seule est enregistrée l’information du pays déjà proposé, afin de ne pas demander deux fois. Si vous n’êtes pas connecté à un réseau mobile, rien n’est détecté.</p>
+
+<h2>Notifications et widgets</h2>
+<p>Si vous créez une alerte de cours, l’application vérifie périodiquement le cours en arrière-plan et affiche une notification lorsque le niveau choisi est atteint. L’autorisation de notifications est facultative. Les widgets de l’écran d’accueil affichent le cours d’une devise choisie ; leurs réglages sont stockés localement.</p>
+
+<h2>Enfants</h2>
+<p>L’application ne s’adresse pas aux enfants de moins de 13 ans et je ne collecte pas sciemment de données d’enfants.</p>
+
+<h2>Vos droits</h2>
+<p>Je ne détiens aucune donnée personnelle vous concernant ; il n’y a donc rien à communiquer, rectifier ou supprimer. Les données traitées par Google (publicités, achats) relèvent des politiques de Google et vous pouvez exercer vos droits auprès de Google, notamment via les paramètres de confidentialité de votre compte Google. Dans l’EEE/au Royaume-Uni, vous pouvez aussi contacter votre autorité locale de protection des données.</p>
+
+<h2>À titre informatif, pas un conseil financier</h2>
+<p>Les cours de l’application sont fournis à titre informatif uniquement. Ils peuvent être différés ou différer de ceux proposés par les banques et bureaux de change, et ne constituent ni un conseil financier ni une offre de change.</p>
+
+<h2>Modifications de cette politique</h2>
+<p>Si le traitement des données de l’application change (par exemple avec de nouvelles fonctions), je mettrai à jour cette page et la date ci-dessus.</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:jezierczak@gmail.com">jezierczak@gmail.com</a></p>
+</section>
+
+<section id="it" lang="it">
+<h1>Informativa sulla privacy</h1>
+<p class="muted">Fast Currency Calculator · app Android · Ultimo aggiornamento: 7 ottobre 2026</p>
+<p class="muted"><em>Traduzione. In caso di discrepanze prevale la versione inglese.</em></p>
+
+<p>Questa informativa descrive come l’app <strong>Fast Currency Calculator</strong> (pacchetto <code>com.finance.jarek.kursywalut</code>, l’«app») tratta le informazioni. L’app è pubblicata da Jarosław Jezierczak («io», «sviluppatore»).</p>
+
+<h2>In sintesi</h2>
+<p>L’app non ha account, accesso né un server proprio. Non raccolgo il tuo nome, e-mail, numero di telefono, posizione precisa né altri dati personali. Gli unici dati che lasciano il tuo dispositivo sono descritti sotto e sono trattati da terzi (fornitori dei cambi, Google AdMob e Google Play).</p>
+
+<h2>Dati memorizzati sul tuo dispositivo</h2>
+<p>Le tue valute preferite, la valuta base, gli avvisi di cambio, la cronologia delle conversioni (le ultime 20 per coppia di valute), le impostazioni dell’app (tema, fonti dei cambi, opzioni del grafico) e i cambi scaricati sono memorizzati solo sul tuo dispositivo. Non ho accesso a questi dati. Vengono eliminati quando disinstalli l’app o ne cancelli i dati.</p>
+
+<h2>Fonti dei cambi</h2>
+<p>Per mostrare i cambi, l’app scarica dati da servizi pubblici: Frankfurter / Banca centrale europea (api.frankfurter.dev), Banca nazionale di Polonia (api.nbp.pl) e un insieme pubblico di dati valutari distribuito tramite jsDelivr (cdn.jsdelivr.net). Come ogni richiesta internet, ciò rivela il tuo indirizzo IP a tali servizi. L’app invia solo i codici valuta necessari e nulla che ti identifichi.</p>
+
+<h2>Pubblicità (Google AdMob)</h2>
+<p>L’app mostra annunci forniti da Google AdMob. AdMob può raccogliere e usare, tra l’altro, l’ID pubblicitario del dispositivo, l’indirizzo IP (da cui si può dedurre una posizione approssimativa), dati sull’interazione con l’app e dati di diagnostica e prestazioni, per mostrare e misurare gli annunci e prevenire le frodi. Nel SEE, nel Regno Unito e in altre regioni in cui è richiesto, l’app chiede il tuo consenso tramite la User Messaging Platform di Google prima di mostrare annunci personalizzati, e puoi cambiare la scelta in seguito. Puoi reimpostare o eliminare l’ID pubblicitario nelle impostazioni di Android (Impostazioni → Privacy → Annunci). Maggiori informazioni: <a href="https://policies.google.com/technologies/partner-sites?hl=it">Come Google usa le informazioni di siti o app che utilizzano i suoi servizi</a> e <a href="https://policies.google.com/privacy?hl=it">Informativa sulla privacy di Google</a>.</p>
+<p>Gli annunci possono essere rimossi definitivamente con un acquisto singolo nell’app.</p>
+
+<h2>Acquisti (Google Play Billing)</h2>
+<p>L’acquisto singolo «PRO – senza pubblicità» è elaborato da Google Play. Non ricevo i tuoi dati di pagamento. L’app verifica solo presso Google Play se l’acquisto è stato effettuato, per ripristinarlo dopo una reinstallazione o su un nuovo dispositivo.</p>
+
+<h2>Rilevamento del paese (viaggio all’estero)</h2>
+<p>Per proporre una valuta base al primo avvio e offrirti la valuta locale quando viaggi, l’app legge il codice del paese della tua SIM e della rete mobile a cui sei connesso (dalle informazioni di telefonia di Android). L’app non usa il GPS e non richiede alcuna autorizzazione di posizione. Questo avviene solo sul tuo dispositivo: il codice del paese non viene mai inviato a me né a un server, e viene salvato solo per quale paese l’app ha già chiesto, per non chiedere due volte. Se non sei connesso a una rete mobile, non viene rilevato nulla.</p>
+
+<h2>Notifiche e widget</h2>
+<p>Se crei un avviso di cambio, l’app controlla periodicamente il cambio in background e mostra una notifica quando viene raggiunto il livello scelto. L’autorizzazione alle notifiche è facoltativa. I widget della schermata Home mostrano il cambio di una valuta scelta; le loro impostazioni sono salvate localmente.</p>
+
+<h2>Minori</h2>
+<p>L’app non è rivolta a minori di 13 anni e non raccolgo consapevolmente dati di minori.</p>
+
+<h2>I tuoi diritti</h2>
+<p>Non conservo dati personali che ti riguardano, quindi non c’è nulla da fornire, correggere o cancellare. I dati trattati da Google (annunci, acquisti) sono soggetti alle politiche di Google e puoi esercitare i tuoi diritti presso Google, anche tramite le impostazioni di privacy del tuo account Google. Nel SEE/Regno Unito puoi anche rivolgerti all’autorità locale per la protezione dei dati.</p>
+
+<h2>Solo informazione, non consulenza finanziaria</h2>
+<p>I cambi nell’app hanno solo scopo informativo. Possono essere in ritardo o differire da quelli offerti da banche e uffici di cambio e non costituiscono consulenza finanziaria né un’offerta di cambio valuta.</p>
+
+<h2>Modifiche a questa informativa</h2>
+<p>Se il trattamento dei dati dell’app cambia (ad esempio con nuove funzioni), aggiornerò questa pagina e la data sopra.</p>
+
+<h2>Contatti</h2>
+<p><a href="mailto:jezierczak@gmail.com">jezierczak@gmail.com</a></p>
+</section>
+
+<section id="tr" lang="tr">
+<h1>Gizlilik politikası</h1>
+<p class="muted">Fast Currency Calculator · Android uygulaması · Son güncelleme: 7 Ekim 2026</p>
+<p class="muted"><em>Çeviri. Farklılık olması durumunda İngilizce sürüm geçerlidir.</em></p>
+
+<p>Bu politika, <strong>Fast Currency Calculator</strong> uygulamasının (paket: <code>com.finance.jarek.kursywalut</code>, “uygulama”) bilgileri nasıl işlediğini açıklar. Uygulama, Jarosław Jezierczak (“ben”, “geliştirici”) tarafından yayımlanmaktadır.</p>
+
+<h2>Özet</h2>
+<p>Uygulamanın hesapları, oturum açma özelliği ve kendi sunucusu yoktur. Adınızı, e-postanızı, telefon numaranızı, kesin konumunuzu veya başka kişisel verilerinizi toplamam. Cihazınızdan çıkan tek veriler aşağıda açıklanmıştır ve üçüncü taraflarca (kur sağlayıcıları, Google AdMob ve Google Play) işlenir.</p>
+
+<h2>Cihazınızda saklanan veriler</h2>
+<p>Favori para birimleriniz, ana para biriminiz, kur uyarıları, dönüşüm geçmişi (her para birimi çifti için son 20), uygulama ayarları (tema, kur kaynakları, grafik seçenekleri) ve indirilen döviz kurları yalnızca cihazınızda yerel olarak saklanır. Bunlara erişimim yoktur. Uygulamayı kaldırdığınızda veya verilerini temizlediğinizde silinirler.</p>
+
+<h2>Kur kaynakları</h2>
+<p>Kurları göstermek için uygulama herkese açık hizmetlerden veri indirir: Frankfurter / Avrupa Merkez Bankası (api.frankfurter.dev), Polonya Ulusal Bankası (api.nbp.pl) ve jsDelivr üzerinden sunulan herkese açık bir para birimi veri kümesi (cdn.jsdelivr.net). Her internet isteği gibi bu da IP adresinizi bu hizmetlere gösterir. Uygulama yalnızca gereken para birimi kodlarını gönderir, sizi tanımlayan hiçbir şey göndermez.</p>
+
+<h2>Reklamlar (Google AdMob)</h2>
+<p>Uygulama, Google AdMob tarafından sağlanan reklamlar gösterir. AdMob, reklamları sunmak ve ölçmek ve dolandırıcılığı önlemek için cihazınızın reklam kimliği, IP adresi (yaklaşık konum çıkarılabilir), uygulama etkileşim verileri ve tanılama/performans verileri gibi bilgileri toplayıp kullanabilir. AEA, Birleşik Krallık ve gerekli diğer bölgelerde uygulama, kişiselleştirilmiş reklamlar gösterilmeden önce Google’ın Kullanıcı Mesajlaşma Platformu üzerinden izninizi ister; seçiminizi sonradan değiştirebilirsiniz. Reklam kimliğinizi Android ayarlarından sıfırlayabilir veya silebilirsiniz (Ayarlar → Gizlilik → Reklamlar). Daha fazla bilgi: <a href="https://policies.google.com/technologies/partner-sites?hl=tr">Google’ın hizmetlerini kullanan sitelerden veya uygulamalardan elde ettiği bilgileri nasıl kullandığı</a> ve <a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a>.</p>
+<p>Reklamlar, uygulama içi tek seferlik bir satın alma ile kalıcı olarak kaldırılabilir.</p>
+
+<h2>Satın alımlar (Google Play Billing)</h2>
+<p>“PRO – reklamsız” tek seferlik satın alımı Google Play tarafından işlenir. Ödeme bilgilerinizi almam. Uygulama yalnızca, yeniden yüklemeden sonra veya yeni bir cihazda geri yüklemek için satın alımın yapılıp yapılmadığını Google Play’den sorar.</p>
+
+<h2>Ülke algılama (yurt dışı seyahati)</h2>
+<p>İlk açılışta bir ana para birimi önermek ve seyahat ederken yerel para birimini sunmak için uygulama, SIM kartınızın ve bağlı olduğunuz mobil şebekenin ülke kodunu okur (Android’in telefon bilgileriyle). Uygulama GPS kullanmaz ve herhangi bir konum izni istemez. Bu yalnızca cihazınızda gerçekleşir: ülke kodu hiçbir zaman bana veya bir sunucuya gönderilmez; yalnızca uygulamanın hangi ülke için sorduğu kaydedilir, böylece iki kez sormaz. Mobil şebekeye bağlı değilseniz hiçbir şey algılanmaz.</p>
+
+<h2>Bildirimler ve widget’lar</h2>
+<p>Bir kur uyarısı oluşturursanız uygulama arka planda kuru düzenli olarak kontrol eder ve seçtiğiniz seviyeye ulaşıldığında bildirim gösterir. Bildirim izni isteğe bağlıdır. Ana ekran widget’ları seçilen bir para biriminin kurunu gösterir; ayarları yerel olarak saklanır.</p>
+
+<h2>Çocuklar</h2>
+<p>Uygulama 13 yaşın altındaki çocuklara yönelik değildir ve çocuklardan bilerek veri toplamam.</p>
+
+<h2>Haklarınız</h2>
+<p>Hakkınızda kişisel veri tutmuyorum, bu nedenle erişim, düzeltme veya silme için bir şey yoktur. Google’ın işlediği veriler (reklamlar, satın alımlar) Google’ın politikalarına tabidir ve bu konudaki haklarınızı Google’a karşı, Google hesabınızın gizlilik ayarları üzerinden de kullanabilirsiniz. AEA/Birleşik Krallık’ta yerel veri koruma kurumuna da başvurabilirsiniz.</p>
+
+<h2>Yalnızca bilgi amaçlıdır, finansal tavsiye değildir</h2>
+<p>Uygulamadaki döviz kurları yalnızca bilgi amaçlıdır. Gecikmeli olabilir veya bankaların ve döviz bürolarının sunduğu kurlardan farklı olabilir; finansal tavsiye veya döviz bozdurma teklifi değildir.</p>
+
+<h2>Bu politikadaki değişiklikler</h2>
+<p>Uygulamanın veri işleme şekli değişirse (örneğin yeni özelliklerle), bu sayfayı ve yukarıdaki tarihi güncelleyeceğim.</p>
+
+<h2>İletişim</h2>
+<p><a href="mailto:jezierczak@gmail.com">jezierczak@gmail.com</a></p>
+</section>
+
+<section id="id" lang="id">
+<h1>Kebijakan privasi</h1>
+<p class="muted">Fast Currency Calculator · aplikasi Android · Terakhir diperbarui: 7 Oktober 2026</p>
+<p class="muted"><em>Terjemahan. Jika ada perbedaan, versi bahasa Inggris yang berlaku.</em></p>
+
+<p>Kebijakan ini menjelaskan bagaimana aplikasi <strong>Fast Currency Calculator</strong> (paket <code>com.finance.jarek.kursywalut</code>, “aplikasi”) menangani informasi. Aplikasi diterbitkan oleh Jarosław Jezierczak (“saya”, “pengembang”).</p>
+
+<h2>Ringkasan</h2>
+<p>Aplikasi tidak memiliki akun, login, atau server sendiri. Saya tidak mengumpulkan nama, e-mail, nomor telepon, lokasi tepat, atau data pribadi Anda yang lain. Satu-satunya data yang keluar dari perangkat Anda dijelaskan di bawah dan ditangani oleh pihak ketiga (penyedia kurs, Google AdMob, dan Google Play).</p>
+
+<h2>Data yang disimpan di perangkat Anda</h2>
+<p>Mata uang favorit, mata uang dasar, peringatan kurs, riwayat konversi (20 terakhir per pasangan mata uang), pengaturan aplikasi (tema, sumber kurs, opsi grafik), dan kurs yang diunduh disimpan hanya secara lokal di perangkat Anda. Saya tidak memiliki akses ke data tersebut. Data dihapus saat Anda menghapus aplikasi atau membersihkan datanya.</p>
+
+<h2>Sumber kurs</h2>
+<p>Untuk menampilkan kurs, aplikasi mengunduh data dari layanan publik: Frankfurter / Bank Sentral Eropa (api.frankfurter.dev), Bank Nasional Polandia (api.nbp.pl), dan kumpulan data mata uang publik yang disajikan lewat jsDelivr (cdn.jsdelivr.net). Seperti setiap permintaan internet, hal ini menampakkan alamat IP Anda kepada layanan tersebut. Aplikasi hanya mengirim kode mata uang yang diperlukan dan tidak ada yang mengidentifikasi Anda.</p>
+
+<h2>Iklan (Google AdMob)</h2>
+<p>Aplikasi menampilkan iklan dari Google AdMob. AdMob dapat mengumpulkan dan menggunakan, antara lain, ID iklan perangkat Anda, alamat IP (dari situ perkiraan lokasi dapat diperoleh), data interaksi dengan aplikasi, serta data diagnostik/kinerja, untuk menayangkan dan mengukur iklan serta mencegah penipuan. Di EEA, Inggris, dan wilayah lain yang mewajibkan, aplikasi meminta persetujuan Anda melalui User Messaging Platform Google sebelum iklan yang dipersonalisasi ditampilkan, dan Anda dapat mengubah pilihan nanti. Anda dapat mengatur ulang atau menghapus ID iklan di pengaturan Android (Setelan → Privasi → Iklan). Informasi lebih lanjut: <a href="https://policies.google.com/technologies/partner-sites?hl=id">Cara Google menggunakan informasi dari situs atau aplikasi yang memakai layanannya</a> dan <a href="https://policies.google.com/privacy?hl=id">Kebijakan Privasi Google</a>.</p>
+<p>Iklan dapat dihapus secara permanen dengan pembelian sekali bayar di dalam aplikasi.</p>
+
+<h2>Pembelian (Google Play Billing)</h2>
+<p>Pembelian sekali bayar “PRO – tanpa iklan” diproses oleh Google Play. Saya tidak menerima data pembayaran Anda. Aplikasi hanya memeriksa ke Google Play apakah pembelian sudah dilakukan, untuk memulihkannya setelah pemasangan ulang atau di perangkat baru.</p>
+
+<h2>Deteksi negara (perjalanan ke luar negeri)</h2>
+<p>Untuk menyarankan mata uang dasar saat pertama dibuka dan menawarkan mata uang lokal saat Anda bepergian, aplikasi membaca kode negara kartu SIM dan jaringan seluler yang terhubung (dari informasi telepon Android). Aplikasi tidak memakai GPS dan tidak meminta izin lokasi apa pun. Ini hanya terjadi di perangkat Anda: kode negara tidak pernah dikirim kepada saya atau ke server mana pun, dan yang disimpan hanyalah negara mana yang sudah ditanyakan aplikasi agar tidak bertanya dua kali. Jika Anda tidak terhubung ke jaringan seluler, tidak ada yang terdeteksi.</p>
+
+<h2>Notifikasi dan widget</h2>
+<p>Jika Anda membuat peringatan kurs, aplikasi memeriksa kurs secara berkala di latar belakang dan menampilkan notifikasi saat level yang dipilih tercapai. Izin notifikasi bersifat opsional. Widget layar utama menampilkan kurs satu mata uang pilihan; pengaturannya disimpan secara lokal.</p>
+
+<h2>Anak-anak</h2>
+<p>Aplikasi ini tidak ditujukan untuk anak di bawah 13 tahun dan saya tidak dengan sengaja mengumpulkan data anak.</p>
+
+<h2>Hak Anda</h2>
+<p>Saya tidak menyimpan data pribadi tentang Anda, sehingga tidak ada yang dapat saya akses, perbaiki, atau hapus. Data yang diproses Google (iklan, pembelian) tunduk pada kebijakan Google dan hak Anda atas data itu dapat dijalankan kepada Google, termasuk lewat pengaturan privasi akun Google Anda. Jika berada di EEA/Inggris, Anda juga dapat menghubungi otoritas perlindungan data setempat.</p>
+
+<h2>Hanya informasi, bukan nasihat keuangan</h2>
+<p>Kurs dalam aplikasi hanya untuk informasi. Kurs dapat tertunda atau berbeda dari kurs bank dan tempat penukaran uang, dan bukan nasihat keuangan atau penawaran penukaran mata uang.</p>
+
+<h2>Perubahan kebijakan ini</h2>
+<p>Jika penanganan data aplikasi berubah (misalnya dengan fitur baru), saya akan memperbarui halaman ini dan tanggal di atas.</p>
+
+<h2>Kontak</h2>
+<p><a href="mailto:jezierczak@gmail.com">jezierczak@gmail.com</a></p>
+</section>
+
+<section id="ru" lang="ru">
+<h1>Политика конфиденциальности</h1>
+<p class="muted">Fast Currency Calculator · приложение для Android · Последнее обновление: 7 октября 2026 г.</p>
+<p class="muted"><em>Перевод. При расхождениях действует английская версия.</em></p>
+
+<p>Эта политика описывает, как приложение <strong>Fast Currency Calculator</strong> (пакет <code>com.finance.jarek.kursywalut</code>, «приложение») обрабатывает информацию. Издатель приложения — Jarosław Jezierczak («я», «разработчик»).</p>
+
+<h2>Кратко</h2>
+<p>В приложении нет учётных записей, входа и собственного сервера. Я не собираю ваше имя, e-mail, номер телефона, точное местоположение и другие персональные данные. Единственные данные, покидающие ваше устройство, описаны ниже и обрабатываются третьими лицами (поставщиками курсов валют, Google AdMob и Google Play).</p>
+
+<h2>Данные на вашем устройстве</h2>
+<p>Избранные валюты, базовая валюта, оповещения о курсе, история расчётов (последние 20 для каждой пары валют), настройки приложения (тема, источники курсов, параметры графика) и загруженные курсы хранятся только локально на вашем устройстве. У меня нет к ним доступа. Они удаляются при удалении приложения или очистке его данных.</p>
+
+<h2>Источники курсов</h2>
+<p>Чтобы показывать курсы, приложение загружает данные из открытых сервисов: Frankfurter / Европейский центральный банк (api.frankfurter.dev), Национальный банк Польши (api.nbp.pl) и открытый набор данных о валютах через jsDelivr (cdn.jsdelivr.net). Как и любой интернет-запрос, это раскрывает этим сервисам ваш IP-адрес. Приложение отправляет только нужные коды валют и ничего, что вас идентифицирует.</p>
+
+<h2>Реклама (Google AdMob)</h2>
+<p>Приложение показывает рекламу Google AdMob. AdMob может собирать и использовать, среди прочего, рекламный идентификатор устройства, IP-адрес (по которому можно определить примерное местоположение), данные о взаимодействии с приложением и диагностические данные и данные о производительности, чтобы показывать и измерять рекламу и предотвращать мошенничество. В ЕЭЗ, Великобритании и других регионах, где это требуется, приложение запрашивает ваше согласие через платформу Google User Messaging Platform перед показом персонализированной рекламы; позже вы можете изменить выбор. Рекламный идентификатор можно сбросить или удалить в настройках Android (Настройки → Конфиденциальность → Реклама). Подробнее: <a href="https://policies.google.com/technologies/partner-sites?hl=ru">Как Google использует информацию с сайтов и из приложений, использующих его сервисы</a> и <a href="https://policies.google.com/privacy?hl=ru">Политика конфиденциальности Google</a>.</p>
+<p>Рекламу можно навсегда отключить разовой покупкой в приложении.</p>
+
+<h2>Покупки (Google Play Billing)</h2>
+<p>Разовая покупка «PRO – без рекламы» обрабатывается Google Play. Я не получаю ваши платёжные данные. Приложение лишь запрашивает у Google Play, совершена ли покупка, чтобы восстановить её после переустановки или на новом устройстве.</p>
+
+<h2>Определение страны (поездка за границу)</h2>
+<p>Чтобы при первом запуске предложить базовую валюту, а в поездке — местную валюту, приложение считывает код страны вашей SIM-карты и мобильной сети, к которой вы подключены (через телефонную информацию Android). Приложение не использует GPS и не запрашивает разрешений на определение местоположения. Это происходит только на вашем устройстве: код страны никогда не отправляется ни мне, ни на какой-либо сервер, а сохраняется лишь то, о какой стране приложение уже спрашивало, чтобы не спрашивать дважды. Если вы не подключены к мобильной сети, ничего не определяется.</p>
+
+<h2>Уведомления и виджеты</h2>
+<p>Если вы создаёте оповещение о курсе, приложение периодически проверяет курс в фоновом режиме и показывает уведомление при достижении выбранного уровня. Разрешение на уведомления необязательно. Виджеты на главном экране показывают курс одной выбранной валюты; их настройки хранятся локально.</p>
+
+<h2>Дети</h2>
+<p>Приложение не предназначено для детей младше 13 лет, и я сознательно не собираю данные детей.</p>
+
+<h2>Ваши права</h2>
+<p>Я не храню никаких ваших персональных данных, поэтому мне нечего предоставлять, исправлять или удалять. Данные, обрабатываемые Google (реклама, покупки), регулируются политиками Google, и свои права вы можете осуществлять через Google, в том числе в настройках конфиденциальности аккаунта Google. В ЕЭЗ/Великобритании вы также можете обратиться в местный орган по защите данных.</p>
+
+<h2>Только информация, не финансовый совет</h2>
+<p>Курсы валют в приложении носят исключительно информационный характер. Они могут запаздывать или отличаться от курсов банков и обменных пунктов и не являются финансовым советом или предложением обмена валюты.</p>
+
+<h2>Изменения политики</h2>
+<p>Если обработка данных в приложении изменится (например, с новыми функциями), я обновлю эту страницу и дату выше.</p>
+
+<h2>Контакты</h2>
+<p><a href="mailto:jezierczak@gmail.com">jezierczak@gmail.com</a></p>
+</section>
+
+<section id="hi" lang="hi">
+<h1>गोपनीयता नीति</h1>
+<p class="muted">Fast Currency Calculator · Android ऐप · अंतिम अपडेट: 7 अक्टूबर 2026</p>
+<p class="muted"><em>अनुवाद। किसी भी अंतर की स्थिति में अंग्रेज़ी संस्करण मान्य होगा।</em></p>
+
+<p>यह नीति बताती है कि ऐप <strong>Fast Currency Calculator</strong> (पैकेज <code>com.finance.jarek.kursywalut</code>, “ऐप”) जानकारी को कैसे संभालता है। ऐप को Jarosław Jezierczak (“मैं”, “डेवलपर”) ने प्रकाशित किया है।</p>
+
+<h2>सारांश</h2>
+<p>ऐप में कोई खाता, साइन-इन या अपना सर्वर नहीं है। मैं आपका नाम, ई-मेल, फ़ोन नंबर, सटीक स्थान या कोई अन्य व्यक्तिगत डेटा एकत्र नहीं करता। आपके डिवाइस से बाहर जाने वाला एकमात्र डेटा नीचे बताया गया है और तृतीय पक्षों (विनिमय दर प्रदाताओं, Google AdMob और Google Play) द्वारा संभाला जाता है।</p>
+
+<h2>आपके डिवाइस पर सहेजा गया डेटा</h2>
+<p>आपकी पसंदीदा मुद्राएँ, आधार मुद्रा, दर अलर्ट, गणना इतिहास (हर मुद्रा-जोड़ी के पिछले 20), ऐप सेटिंग (थीम, दर स्रोत, ग्राफ़ विकल्प) और डाउनलोड की गई विनिमय दरें केवल आपके डिवाइस पर स्थानीय रूप से सहेजी जाती हैं। इन तक मेरी पहुँच नहीं है। ऐप अनइंस्टॉल करने या उसका डेटा साफ़ करने पर ये हट जाती हैं।</p>
+
+<h2>दर स्रोत</h2>
+<p>दरें दिखाने के लिए ऐप सार्वजनिक सेवाओं से डेटा डाउनलोड करता है: Frankfurter / यूरोपीय केंद्रीय बैंक (api.frankfurter.dev), पोलैंड का राष्ट्रीय बैंक (api.nbp.pl) और jsDelivr (cdn.jsdelivr.net) के ज़रिये दिया जाने वाला सार्वजनिक मुद्रा डेटा सेट। किसी भी इंटरनेट अनुरोध की तरह, इससे इन सेवाओं को आपका IP पता दिखता है। ऐप केवल ज़रूरी मुद्रा कोड भेजता है, ऐसा कुछ नहीं जो आपकी पहचान कराए।</p>
+
+<h2>विज्ञापन (Google AdMob)</h2>
+<p>ऐप Google AdMob द्वारा दिए गए विज्ञापन दिखाता है। विज्ञापन दिखाने, मापने और धोखाधड़ी रोकने के लिए AdMob अन्य बातों के साथ आपके डिवाइस की विज्ञापन आईडी, IP पता (जिससे अनुमानित स्थान निकल सकता है), ऐप इंटरैक्शन डेटा और डायग्नोस्टिक/प्रदर्शन डेटा एकत्र और उपयोग कर सकता है। EEA, यूके और जहाँ आवश्यक हो वहाँ, वैयक्तिकृत विज्ञापन दिखाने से पहले ऐप Google के User Messaging Platform के ज़रिये आपकी सहमति माँगता है, और आप बाद में अपनी पसंद बदल सकते हैं। आप Android सेटिंग में अपनी विज्ञापन आईडी रीसेट या हटा सकते हैं (सेटिंग → गोपनीयता → विज्ञापन)। अधिक जानकारी: <a href="https://policies.google.com/technologies/partner-sites?hl=hi">Google अपनी सेवाओं का उपयोग करने वाली साइटों या ऐप्स की जानकारी का उपयोग कैसे करता है</a> और <a href="https://policies.google.com/privacy?hl=hi">Google की गोपनीयता नीति</a>।</p>
+<p>ऐप में एक बार की खरीद से विज्ञापन हमेशा के लिए हटाए जा सकते हैं।</p>
+
+<h2>खरीद (Google Play Billing)</h2>
+<p>एक बार की खरीद “PRO – बिना विज्ञापन” Google Play द्वारा संसाधित होती है। मुझे आपकी भुगतान जानकारी नहीं मिलती। ऐप केवल Google Play से पूछता है कि खरीद हुई है या नहीं, ताकि उसे दोबारा इंस्टॉल करने के बाद या नए डिवाइस पर बहाल किया जा सके।</p>
+
+<h2>देश की पहचान (विदेश यात्रा)</h2>
+<p>पहली बार खोलने पर आधार मुद्रा सुझाने और यात्रा के दौरान स्थानीय मुद्रा देने के लिए, ऐप आपके SIM कार्ड और जिस मोबाइल नेटवर्क से आप जुड़े हैं उसका देश कोड पढ़ता है (Android की टेलीफ़ोनी जानकारी से)। ऐप GPS का उपयोग नहीं करता और कोई स्थान अनुमति नहीं माँगता। यह केवल आपके डिवाइस पर होता है: देश कोड कभी मुझे या किसी सर्वर को नहीं भेजा जाता, और केवल यह सहेजा जाता है कि ऐप किस देश के बारे में पहले पूछ चुका है, ताकि दो बार न पूछे। अगर आप मोबाइल नेटवर्क से नहीं जुड़े हैं तो कुछ भी पहचाना नहीं जाता।</p>
+
+<h2>सूचनाएँ और विजेट</h2>
+<p>यदि आप दर अलर्ट बनाते हैं, तो ऐप बैकग्राउंड में समय-समय पर दर जाँचता है और चुना हुआ स्तर आने पर सूचना दिखाता है। सूचना अनुमति वैकल्पिक है। होम स्क्रीन विजेट एक चुनी हुई मुद्रा की दर दिखाते हैं; उनकी सेटिंग स्थानीय रूप से सहेजी जाती हैं।</p>
+
+<h2>बच्चे</h2>
+<p>ऐप 13 वर्ष से कम उम्र के बच्चों के लिए नहीं है और मैं जानबूझकर बच्चों का डेटा एकत्र नहीं करता।</p>
+
+<h2>आपके अधिकार</h2>
+<p>मैं आपका कोई व्यक्तिगत डेटा नहीं रखता, इसलिए मेरे पास उपलब्ध कराने, सुधारने या हटाने के लिए कुछ नहीं है। Google द्वारा संसाधित डेटा (विज्ञापन, खरीद) Google की नीतियों के अधीन है और इस बारे में अपने अधिकार आप Google से, अपने Google खाते की गोपनीयता सेटिंग के ज़रिये भी, इस्तेमाल कर सकते हैं। EEA/यूके में आप अपने स्थानीय डेटा सुरक्षा प्राधिकरण से भी संपर्क कर सकते हैं।</p>
+
+<h2>केवल जानकारी, वित्तीय सलाह नहीं</h2>
+<p>ऐप में दी गई विनिमय दरें केवल जानकारी के लिए हैं। वे देर से अपडेट हो सकती हैं या बैंकों और मनी चेंजरों की दरों से अलग हो सकती हैं, और वे वित्तीय सलाह या मुद्रा विनिमय का प्रस्ताव नहीं हैं।</p>
+
+<h2>इस नीति में बदलाव</h2>
+<p>यदि ऐप के डेटा संभालने के तरीके में बदलाव होता है (जैसे नई सुविधाओं के साथ), तो मैं यह पेज और ऊपर की तारीख अपडेट करूँगा।</p>
+
+<h2>संपर्क</h2>
+<p><a href="mailto:jezierczak@gmail.com">jezierczak@gmail.com</a></p>
+</section>
+
+<section id="cs" lang="cs">
+<h1>Zásady ochrany osobních údajů</h1>
+<p class="muted">Fast Currency Calculator · aplikace pro Android · Poslední aktualizace: 7. října 2026</p>
+<p class="muted"><em>Překlad. V případě rozporu platí anglická verze.</em></p>
+
+<p>Tyto zásady popisují, jak aplikace <strong>Fast Currency Calculator</strong> (balíček <code>com.finance.jarek.kursywalut</code>, „aplikace“) zpracovává informace. Aplikaci vydává Jarosław Jezierczak („já“, „vývojář“).</p>
+
+<h2>Shrnutí</h2>
+<p>Aplikace nemá účty, přihlášení ani vlastní server. Neshromažďuji vaše jméno, e-mail, telefonní číslo, přesnou polohu ani jiné osobní údaje. Jediná data, která opouštějí vaše zařízení, jsou popsána níže a zpracovávají je třetí strany (poskytovatelé kurzů, Google AdMob a Google Play).</p>
+
+<h2>Údaje uložené ve vašem zařízení</h2>
+<p>Oblíbené měny, základní měna, upozornění na kurz, historie přepočtů (posledních 20 pro každý pár měn), nastavení aplikace (motiv, zdroje kurzů, volby grafu) a stažené kurzy jsou uloženy pouze lokálně ve vašem zařízení. Nemám k nim přístup. Smažou se odinstalací aplikace nebo vymazáním jejích dat.</p>
+
+<h2>Zdroje kurzů</h2>
+<p>K zobrazení kurzů aplikace stahuje data z veřejných služeb: Frankfurter / Evropská centrální banka (api.frankfurter.dev), Polská národní banka (api.nbp.pl) a veřejný soubor měnových dat poskytovaný přes jsDelivr (cdn.jsdelivr.net). Jako každý internetový požadavek to těmto službám odhalí vaši IP adresu. Aplikace odesílá jen potřebné kódy měn a nic, co by vás identifikovalo.</p>
+
+<h2>Reklama (Google AdMob)</h2>
+<p>Aplikace zobrazuje reklamy od Google AdMob. AdMob může mimo jiné shromažďovat a používat reklamní ID zařízení, IP adresu (z níž lze odvodit přibližnou polohu), data o interakci s aplikací a diagnostická data a data o výkonu, aby reklamy zobrazoval a měřil a předcházel podvodům. V EHP, ve Spojeném království a v dalších regionech, kde je to vyžadováno, se aplikace před zobrazením personalizovaných reklam ptá na váš souhlas přes Google User Messaging Platform a svou volbu můžete později změnit. Reklamní ID můžete resetovat nebo smazat v nastavení Androidu (Nastavení → Soukromí → Reklamy). Další informace: <a href="https://policies.google.com/technologies/partner-sites?hl=cs">Jak Google používá informace z webů nebo aplikací, které využívají jeho služby</a> a <a href="https://policies.google.com/privacy?hl=cs">Zásady ochrany osobních údajů Google</a>.</p>
+<p>Reklamy lze trvale odstranit jednorázovým nákupem v aplikaci.</p>
+
+<h2>Nákupy (Google Play Billing)</h2>
+<p>Jednorázový nákup „PRO – bez reklam“ zpracovává Google Play. Vaše platební údaje nedostávám. Aplikace se jen dotazuje Google Play, zda byl nákup proveden, aby ho mohla obnovit po přeinstalaci nebo na novém zařízení.</p>
+
+<h2>Rozpoznání země (cesta do zahraničí)</h2>
+<p>Aby aplikace při prvním spuštění navrhla základní měnu a na cestách nabídla místní měnu, čte kód země vaší SIM karty a mobilní sítě, ke které jste připojeni (z telefonních informací Androidu). Aplikace nepoužívá GPS a nežádá o žádné oprávnění k poloze. Děje se to jen ve vašem zařízení: kód země se nikdy neodesílá mně ani na žádný server a ukládá se pouze to, na kterou zemi se už aplikace ptala, aby se neptala dvakrát. Pokud nejste připojeni k mobilní síti, nic se nezjišťuje.</p>
+
+<h2>Oznámení a widgety</h2>
+<p>Pokud vytvoříte upozornění na kurz, aplikace na pozadí pravidelně kontroluje kurz a po dosažení zvolené úrovně zobrazí oznámení. Oprávnění k oznámením je volitelné. Widgety na ploše zobrazují kurz jedné zvolené měny; jejich nastavení se ukládá lokálně.</p>
+
+<h2>Děti</h2>
+<p>Aplikace není určena dětem do 13 let a vědomě neshromažďuji údaje o dětech.</p>
+
+<h2>Vaše práva</h2>
+<p>Neuchovávám o vás žádné osobní údaje, takže není co zpřístupnit, opravit ani smazat. Údaje zpracovávané Googlem (reklamy, nákupy) se řídí zásadami Googlu a svá práva můžete uplatnit u Googlu, i prostřednictvím nastavení soukromí svého účtu Google. V EHP/Spojeném království se můžete obrátit také na místní úřad pro ochranu osobních údajů.</p>
+
+<h2>Pouze informace, nikoli finanční poradenství</h2>
+<p>Směnné kurzy v aplikaci slouží pouze k informaci. Mohou být zpožděné nebo se lišit od kurzů bank a směnáren a nejsou finančním poradenstvím ani nabídkou ke směně měn.</p>
+
+<h2>Změny těchto zásad</h2>
+<p>Pokud se změní zpracování údajů v aplikaci (např. s novými funkcemi), aktualizuji tuto stránku a výše uvedené datum.</p>
+
+<h2>Kontakt</h2>
+<p><a href="mailto:jezierczak@gmail.com">jezierczak@gmail.com</a></p>
+</section>
+
+<section id="uk" lang="uk">
+<h1>Політика конфіденційності</h1>
+<p class="muted">Fast Currency Calculator · застосунок для Android · Останнє оновлення: 7 жовтня 2026 р.</p>
+<p class="muted"><em>Переклад. У разі розбіжностей чинною є англійська версія.</em></p>
+
+<p>Ця політика описує, як застосунок <strong>Fast Currency Calculator</strong> (пакет <code>com.finance.jarek.kursywalut</code>, «застосунок») обробляє інформацію. Видавець застосунку — Jarosław Jezierczak («я», «розробник»).</p>
+
+<h2>Коротко</h2>
+<p>У застосунку немає облікових записів, входу та власного сервера. Я не збираю ваше імʼя, e-mail, номер телефону, точне місцезнаходження чи інші персональні дані. Єдині дані, що залишають ваш пристрій, описано нижче, і їх обробляють треті сторони (постачальники курсів, Google AdMob та Google Play).</p>
+
+<h2>Дані на вашому пристрої</h2>
+<p>Обрані валюти, базова валюта, сповіщення про курс, історія розрахунків (останні 20 для кожної пари валют), налаштування застосунку (тема, джерела курсів, параметри графіка) і завантажені курси зберігаються лише локально на вашому пристрої. Я не маю до них доступу. Їх буде видалено після видалення застосунку або очищення його даних.</p>
+
+<h2>Джерела курсів</h2>
+<p>Щоб показувати курси, застосунок завантажує дані з відкритих сервісів: Frankfurter / Європейський центральний банк (api.frankfurter.dev), Національний банк Польщі (api.nbp.pl) і відкритий набір даних про валюти через jsDelivr (cdn.jsdelivr.net). Як і будь-який інтернет-запит, це розкриває цим сервісам вашу IP-адресу. Застосунок надсилає лише потрібні коди валют і нічого, що вас ідентифікує.</p>
+
+<h2>Реклама (Google AdMob)</h2>
+<p>Застосунок показує рекламу Google AdMob. AdMob може збирати й використовувати, зокрема, рекламний ідентифікатор пристрою, IP-адресу (за якою можна визначити приблизне місцезнаходження), дані про взаємодію із застосунком і діагностичні дані та дані про продуктивність, щоб показувати й вимірювати рекламу та запобігати шахрайству. В ЄЕЗ, Великій Британії та інших регіонах, де це потрібно, застосунок запитує вашу згоду через Google User Messaging Platform перед показом персоналізованої реклами, і ви можете пізніше змінити вибір. Рекламний ідентифікатор можна скинути або видалити в налаштуваннях Android (Налаштування → Конфіденційність → Реклама). Докладніше: <a href="https://policies.google.com/technologies/partner-sites?hl=uk">Як Google використовує інформацію із сайтів і застосунків, що використовують його сервіси</a> і <a href="https://policies.google.com/privacy?hl=uk">Політика конфіденційності Google</a>.</p>
+<p>Рекламу можна назавжди вимкнути одноразовою покупкою в застосунку.</p>
+
+<h2>Покупки (Google Play Billing)</h2>
+<p>Одноразова покупка «PRO – без реклами» обробляється Google Play. Я не отримую ваших платіжних даних. Застосунок лише запитує в Google Play, чи було здійснено покупку, щоб відновити її після перевстановлення або на новому пристрої.</p>
+
+<h2>Визначення країни (поїздка за кордон)</h2>
+<p>Щоб під час першого запуску запропонувати базову валюту, а в поїздці — місцеву, застосунок зчитує код країни вашої SIM-картки та мобільної мережі, до якої ви підключені (з телефонної інформації Android). Застосунок не використовує GPS і не просить жодних дозволів на геолокацію. Це відбувається лише на вашому пристрої: код країни ніколи не надсилається ні мені, ні на жоден сервер, а зберігається лише те, про яку країну застосунок уже питав, щоб не питати двічі. Якщо ви не підключені до мобільної мережі, нічого не визначається.</p>
+
+<h2>Сповіщення та віджети</h2>
+<p>Якщо ви створите сповіщення про курс, застосунок періодично перевіряє курс у фоновому режимі та показує сповіщення, коли досягнуто вибраного рівня. Дозвіл на сповіщення необовʼязковий. Віджети на головному екрані показують курс однієї вибраної валюти; їхні налаштування зберігаються локально.</p>
+
+<h2>Діти</h2>
+<p>Застосунок не призначений для дітей віком до 13 років, і я свідомо не збираю дані дітей.</p>
+
+<h2>Ваші права</h2>
+<p>Я не зберігаю жодних ваших персональних даних, тому мені нічого надавати, виправляти чи видаляти. Дані, які обробляє Google (реклама, покупки), підпадають під політики Google, і свої права щодо них ви можете реалізовувати через Google, зокрема в налаштуваннях конфіденційності облікового запису Google. В ЄЕЗ/Великій Британії ви також можете звернутися до місцевого органу із захисту даних.</p>
+
+<h2>Лише інформація, не фінансова порада</h2>
+<p>Курси валют у застосунку мають виключно інформаційний характер. Вони можуть запізнюватися або відрізнятися від курсів банків і обмінних пунктів і не є фінансовою порадою чи пропозицією обміну валюти.</p>
+
+<h2>Зміни політики</h2>
+<p>Якщо обробка даних у застосунку зміниться (наприклад, з новими функціями), я оновлю цю сторінку та дату вище.</p>
+
+<h2>Контакти</h2>
+<p><a href="mailto:jezierczak@gmail.com">jezierczak@gmail.com</a></p>
+</section>
+
+<section id="ja" lang="ja">
+<h1>プライバシーポリシー</h1>
+<p class="muted">Fast Currency Calculator · Androidアプリ · 最終更新日：2026年10月7日</p>
+<p class="muted"><em>翻訳です。相違がある場合は英語版が優先されます。</em></p>
+
+<p>本ポリシーは、アプリ<strong>Fast Currency Calculator</strong>（パッケージ<code>com.finance.jarek.kursywalut</code>、以下「本アプリ」）が情報をどのように扱うかを説明するものです。本アプリはJarosław Jezierczak（以下「私」「開発者」）が公開しています。</p>
+
+<h2>概要</h2>
+<p>本アプリにはアカウントもログインも独自サーバーもありません。私はお客様の氏名、メールアドレス、電話番号、正確な位置情報、その他の個人情報を収集しません。端末の外へ送信されるデータは以下に記載のものだけで、第三者（為替レートの提供元、Google AdMob、Google Play）が取り扱います。</p>
+
+<h2>端末に保存されるデータ</h2>
+<p>お気に入りの通貨、基準通貨、レート通知、計算履歴（通貨ペアごとに直近20件）、アプリの設定（テーマ、レートの取得元、グラフのオプション）、ダウンロードした為替レートは、お使いの端末内にのみ保存されます。私はこれらにアクセスできません。アプリをアンインストールするか、データを消去すると削除されます。</p>
+
+<h2>為替レートの取得元</h2>
+<p>レートを表示するため、本アプリは公開サービスからデータを取得します：Frankfurter／欧州中央銀行（api.frankfurter.dev）、ポーランド国立銀行（api.nbp.pl）、およびjsDelivr経由で提供される公開の通貨データセット（cdn.jsdelivr.net）。インターネット通信の常として、これによりお客様のIPアドレスがこれらのサービスに伝わります。本アプリが送信するのは必要な通貨コードのみで、お客様を特定する情報は送信しません。</p>
+
+<h2>広告（Google AdMob）</h2>
+<p>本アプリはGoogle AdMobが提供する広告を表示します。AdMobは、広告の配信・測定および不正防止のため、端末の広告ID、IPアドレス（おおよその位置が推定される場合があります）、アプリの操作データ、診断・パフォーマンスデータなどを収集・利用することがあります。EEA、英国、およびその他同意が必要な地域では、パーソナライズ広告を表示する前にGoogleのUser Messaging Platformで同意を求め、後から選択を変更できます。広告IDはAndroidの設定（設定 → プライバシー → 広告）でリセットまたは削除できます。詳細：<a href="https://policies.google.com/technologies/partner-sites?hl=ja">Googleのサービスを使用するサイトやアプリからの情報の利用方法</a>、<a href="https://policies.google.com/privacy?hl=ja">Googleプライバシーポリシー</a>。</p>
+<p>広告は、アプリ内の1回限りの購入で完全に非表示にできます。</p>
+
+<h2>購入（Google Play Billing）</h2>
+<p>1回限りの購入「PRO – 広告なし」はGoogle Playが処理します。私はお客様の支払い情報を受け取りません。本アプリは、再インストール後や新しい端末で購入を復元するため、購入済みかどうかをGoogle Playに確認するだけです。</p>
+
+<h2>国の検出（海外渡航）</h2>
+<p>初回起動時に基準通貨を提案し、渡航時に現地の通貨を提案するため、本アプリはSIMカードおよび接続中のモバイルネットワークの国コードを読み取ります（Androidの電話情報を使用）。本アプリはGPSを使用せず、位置情報の権限も要求しません。これはお客様の端末内だけで行われます。国コードが私やサーバーに送信されることはなく、保存されるのは、同じ質問を繰り返さないために本アプリがどの国について既に尋ねたかという情報のみです。モバイルネットワークに接続していない場合、何も検出されません。</p>
+
+<h2>通知とウィジェット</h2>
+<p>レート通知を作成すると、本アプリはバックグラウンドで定期的にレートを確認し、選択した水準に達したときに通知を表示します。通知の権限は任意です。ホーム画面のウィジェットは選択した1つの通貨のレートを表示し、その設定は端末内に保存されます。</p>
+
+<h2>お子様</h2>
+<p>本アプリは13歳未満のお子様を対象としておらず、私はお子様のデータを意図的に収集しません。</p>
+
+<h2>お客様の権利</h2>
+<p>私はお客様に関する個人データを保有していないため、開示、訂正、削除の対象となるものがありません。Googleが処理するデータ（広告、購入）はGoogleのポリシーに従い、それに関する権利は、Googleアカウントのプライバシー設定を含め、Googleに対して行使できます。EEA／英国にお住まいの場合は、現地のデータ保護当局に連絡することもできます。</p>
+
+<h2>情報提供のみであり、金融アドバイスではありません</h2>
+<p>アプリ内の為替レートは情報提供のみを目的としています。遅延したり、銀行や両替所のレートと異なる場合があり、金融アドバイスや通貨交換の申し出ではありません。</p>
+
+<h2>本ポリシーの変更</h2>
+<p>本アプリのデータの取り扱いが変わる場合（新機能の追加など）、このページと上記の日付を更新します。</p>
+
+<h2>お問い合わせ</h2>
+<p><a href="mailto:jezierczak@gmail.com">jezierczak@gmail.com</a></p>
+</section>
+
+<section id="ko" lang="ko">
+<h1>개인정보 처리방침</h1>
+<p class="muted">Fast Currency Calculator · Android 앱 · 최종 업데이트: 2026년 10월 7일</p>
+<p class="muted"><em>번역본입니다. 내용이 다를 경우 영어 버전이 우선합니다.</em></p>
+
+<p>이 방침은 앱 <strong>Fast Currency Calculator</strong>(패키지 <code>com.finance.jarek.kursywalut</code>, 이하 “앱”)가 정보를 어떻게 처리하는지 설명합니다. 앱은 Jarosław Jezierczak(이하 “저”, “개발자”)가 배포합니다.</p>
+
+<h2>요약</h2>
+<p>앱에는 계정, 로그인, 자체 서버가 없습니다. 저는 이름, 이메일, 전화번호, 정확한 위치 또는 기타 개인정보를 수집하지 않습니다. 기기 밖으로 나가는 데이터는 아래에 설명된 것뿐이며, 제3자(환율 제공업체, Google AdMob, Google Play)가 처리합니다.</p>
+
+<h2>기기에 저장되는 데이터</h2>
+<p>즐겨찾는 통화, 기준 통화, 환율 알림, 계산 기록(통화 쌍별 최근 20건), 앱 설정(테마, 환율 소스, 그래프 옵션), 다운로드한 환율은 기기에만 로컬로 저장됩니다. 저는 이 데이터에 접근할 수 없습니다. 앱을 삭제하거나 데이터를 지우면 함께 삭제됩니다.</p>
+
+<h2>환율 소스</h2>
+<p>환율을 표시하기 위해 앱은 공개 서비스에서 데이터를 내려받습니다: Frankfurter / 유럽중앙은행(api.frankfurter.dev), 폴란드 국립은행(api.nbp.pl), jsDelivr(cdn.jsdelivr.net)를 통해 제공되는 공개 통화 데이터 세트. 모든 인터넷 요청과 마찬가지로 이 서비스들에 IP 주소가 노출됩니다. 앱은 필요한 통화 코드만 보내며, 사용자를 식별하는 정보는 보내지 않습니다.</p>
+
+<h2>광고(Google AdMob)</h2>
+<p>앱은 Google AdMob이 제공하는 광고를 표시합니다. AdMob은 광고를 게재·측정하고 부정 행위를 방지하기 위해 기기의 광고 ID, IP 주소(대략적인 위치를 유추할 수 있음), 앱 상호작용 데이터, 진단·성능 데이터 등을 수집하고 사용할 수 있습니다. EEA, 영국 및 필요한 기타 지역에서는 맞춤 광고를 표시하기 전에 Google의 User Messaging Platform을 통해 동의를 구하며, 나중에 선택을 변경할 수 있습니다. 광고 ID는 Android 설정(설정 → 개인정보 보호 → 광고)에서 재설정하거나 삭제할 수 있습니다. 자세한 내용: <a href="https://policies.google.com/technologies/partner-sites?hl=ko">Google이 자사 서비스를 사용하는 사이트 또는 앱의 정보를 사용하는 방법</a> 및 <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a>.</p>
+<p>앱 내 일회성 구매로 광고를 영구적으로 제거할 수 있습니다.</p>
+
+<h2>구매(Google Play Billing)</h2>
+<p>일회성 구매 “PRO – 광고 없음”은 Google Play가 처리합니다. 저는 결제 정보를 받지 않습니다. 앱은 재설치 후 또는 새 기기에서 구매를 복원하기 위해 구매 여부만 Google Play에 확인합니다.</p>
+
+<h2>국가 감지(해외 여행)</h2>
+<p>처음 실행할 때 기준 통화를 제안하고 여행 중 현지 통화를 제안하기 위해, 앱은 SIM 카드와 연결된 모바일 네트워크의 국가 코드를 읽습니다(Android의 통신 정보 사용). 앱은 GPS를 사용하지 않으며 위치 권한도 요청하지 않습니다. 이 과정은 기기 안에서만 이루어집니다. 국가 코드는 저나 어떤 서버로도 전송되지 않으며, 같은 질문을 반복하지 않도록 앱이 이미 어느 나라에 대해 물어봤는지만 저장됩니다. 모바일 네트워크에 연결되어 있지 않으면 아무것도 감지되지 않습니다.</p>
+
+<h2>알림 및 위젯</h2>
+<p>환율 알림을 만들면 앱이 백그라운드에서 주기적으로 환율을 확인하고, 선택한 수준에 도달하면 알림을 표시합니다. 알림 권한은 선택 사항입니다. 홈 화면 위젯은 선택한 통화 하나의 환율을 보여 주며, 위젯 설정은 로컬에 저장됩니다.</p>
+
+<h2>어린이</h2>
+<p>앱은 13세 미만 어린이를 대상으로 하지 않으며, 저는 어린이의 데이터를 고의로 수집하지 않습니다.</p>
+
+<h2>이용자의 권리</h2>
+<p>저는 이용자에 관한 개인정보를 보유하지 않으므로 제공, 정정, 삭제할 것이 없습니다. Google이 처리하는 데이터(광고, 구매)는 Google의 정책이 적용되며, 이에 대한 권리는 Google 계정의 개인정보 보호 설정을 포함해 Google을 통해 행사할 수 있습니다. EEA/영국에 계신 경우 현지 개인정보 보호 당국에 문의할 수도 있습니다.</p>
+
+<h2>정보 제공용이며 금융 조언이 아닙니다</h2>
+<p>앱의 환율은 정보 제공 목적일 뿐입니다. 지연되거나 은행 및 환전소의 환율과 다를 수 있으며, 금융 조언이나 환전 제안이 아닙니다.</p>
+
+<h2>방침의 변경</h2>
+<p>앱의 데이터 처리 방식이 바뀌면(예: 새 기능 추가) 이 페이지와 위의 날짜를 업데이트하겠습니다.</p>
+
+<h2>문의</h2>
+<p><a href="mailto:jezierczak@gmail.com">jezierczak@gmail.com</a></p>
+</section>
+
+<section id="vi" lang="vi">
+<h1>Chính sách quyền riêng tư</h1>
+<p class="muted">Fast Currency Calculator · ứng dụng Android · Cập nhật lần cuối: 7 tháng 10 năm 2026</p>
+<p class="muted"><em>Bản dịch. Nếu có khác biệt, bản tiếng Anh được ưu tiên.</em></p>
+
+<p>Chính sách này mô tả cách ứng dụng <strong>Fast Currency Calculator</strong> (gói <code>com.finance.jarek.kursywalut</code>, “ứng dụng”) xử lý thông tin. Ứng dụng do Jarosław Jezierczak (“tôi”, “nhà phát triển”) phát hành.</p>
+
+<h2>Tóm tắt</h2>
+<p>Ứng dụng không có tài khoản, không đăng nhập và không có máy chủ riêng. Tôi không thu thập tên, e-mail, số điện thoại, vị trí chính xác hay dữ liệu cá nhân nào khác của bạn. Dữ liệu duy nhất rời khỏi thiết bị của bạn được mô tả dưới đây và do bên thứ ba xử lý (nhà cung cấp tỷ giá, Google AdMob và Google Play).</p>
+
+<h2>Dữ liệu lưu trên thiết bị của bạn</h2>
+<p>Các loại tiền yêu thích, tiền tệ gốc, cảnh báo tỷ giá, lịch sử quy đổi (20 lần gần nhất cho mỗi cặp tiền tệ), cài đặt ứng dụng (giao diện, nguồn tỷ giá, tùy chọn biểu đồ) và tỷ giá đã tải chỉ được lưu cục bộ trên thiết bị của bạn. Tôi không có quyền truy cập vào chúng. Chúng bị xóa khi bạn gỡ ứng dụng hoặc xóa dữ liệu của ứng dụng.</p>
+
+<h2>Nguồn tỷ giá</h2>
+<p>Để hiển thị tỷ giá, ứng dụng tải dữ liệu từ các dịch vụ công khai: Frankfurter / Ngân hàng Trung ương châu Âu (api.frankfurter.dev), Ngân hàng Quốc gia Ba Lan (api.nbp.pl) và một bộ dữ liệu tiền tệ công khai được phân phối qua jsDelivr (cdn.jsdelivr.net). Như mọi yêu cầu internet, điều này để lộ địa chỉ IP của bạn cho các dịch vụ đó. Ứng dụng chỉ gửi các mã tiền tệ cần thiết và không gửi gì có thể nhận dạng bạn.</p>
+
+<h2>Quảng cáo (Google AdMob)</h2>
+<p>Ứng dụng hiển thị quảng cáo do Google AdMob cung cấp. AdMob có thể thu thập và sử dụng, trong số đó, ID quảng cáo của thiết bị, địa chỉ IP (từ đó có thể suy ra vị trí gần đúng), dữ liệu tương tác với ứng dụng và dữ liệu chẩn đoán/hiệu suất để phân phối, đo lường quảng cáo và ngăn gian lận. Tại EEA, Vương quốc Anh và các khu vực khác có yêu cầu, ứng dụng xin sự đồng ý của bạn qua User Messaging Platform của Google trước khi hiển thị quảng cáo được cá nhân hóa, và bạn có thể thay đổi lựa chọn sau đó. Bạn có thể đặt lại hoặc xóa ID quảng cáo trong cài đặt Android (Cài đặt → Quyền riêng tư → Quảng cáo). Thông tin thêm: <a href="https://policies.google.com/technologies/partner-sites?hl=vi">Cách Google sử dụng thông tin từ các trang web hoặc ứng dụng dùng dịch vụ của Google</a> và <a href="https://policies.google.com/privacy?hl=vi">Chính sách quyền riêng tư của Google</a>.</p>
+<p>Có thể xóa quảng cáo vĩnh viễn bằng một lần mua trong ứng dụng.</p>
+
+<h2>Giao dịch mua (Google Play Billing)</h2>
+<p>Giao dịch mua một lần “PRO – không quảng cáo” do Google Play xử lý. Tôi không nhận thông tin thanh toán của bạn. Ứng dụng chỉ hỏi Google Play xem giao dịch đã được thực hiện chưa, để khôi phục sau khi cài đặt lại hoặc trên thiết bị mới.</p>
+
+<h2>Phát hiện quốc gia (đi nước ngoài)</h2>
+<p>Để đề xuất tiền tệ gốc khi mở lần đầu và gợi ý tiền tệ địa phương khi bạn đi du lịch, ứng dụng đọc mã quốc gia của thẻ SIM và mạng di động bạn đang kết nối (từ thông tin điện thoại của Android). Ứng dụng không dùng GPS và không yêu cầu bất kỳ quyền vị trí nào. Việc này chỉ diễn ra trên thiết bị của bạn: mã quốc gia không bao giờ được gửi cho tôi hay bất kỳ máy chủ nào, và chỉ lưu thông tin ứng dụng đã hỏi về quốc gia nào để không hỏi hai lần. Nếu bạn không kết nối mạng di động, sẽ không phát hiện gì.</p>
+
+<h2>Thông báo và widget</h2>
+<p>Nếu bạn tạo cảnh báo tỷ giá, ứng dụng định kỳ kiểm tra tỷ giá ở chế độ nền và hiển thị thông báo khi đạt mức bạn chọn. Quyền thông báo là tùy chọn. Widget màn hình chính hiển thị tỷ giá của một loại tiền được chọn; cài đặt của chúng được lưu cục bộ.</p>
+
+<h2>Trẻ em</h2>
+<p>Ứng dụng không dành cho trẻ em dưới 13 tuổi và tôi không cố ý thu thập dữ liệu của trẻ em.</p>
+
+<h2>Quyền của bạn</h2>
+<p>Tôi không lưu giữ dữ liệu cá nhân nào về bạn, nên không có gì để cung cấp, chỉnh sửa hay xóa. Dữ liệu do Google xử lý (quảng cáo, giao dịch mua) tuân theo chính sách của Google và bạn có thể thực hiện quyền của mình với Google, kể cả qua cài đặt quyền riêng tư của tài khoản Google. Nếu ở EEA/Vương quốc Anh, bạn cũng có thể liên hệ cơ quan bảo vệ dữ liệu địa phương.</p>
+
+<h2>Chỉ mang tính thông tin, không phải lời khuyên tài chính</h2>
+<p>Tỷ giá trong ứng dụng chỉ nhằm mục đích thông tin. Chúng có thể bị chậm hoặc khác với tỷ giá của ngân hàng và điểm đổi tiền, và không phải lời khuyên tài chính hay đề nghị đổi tiền.</p>
+
+<h2>Thay đổi chính sách này</h2>
+<p>Nếu cách ứng dụng xử lý dữ liệu thay đổi (ví dụ với tính năng mới), tôi sẽ cập nhật trang này và ngày ở trên.</p>
+
+<h2>Liên hệ</h2>
+<p><a href="mailto:jezierczak@gmail.com">jezierczak@gmail.com</a></p>
+</section>
+
 </main>
+<script>
+(function () {
+  var langs = ['en', 'pl', 'es', 'pt', 'de', 'fr', 'it', 'tr', 'id', 'ru', 'hi', 'cs', 'uk', 'ja', 'ko', 'vi'];
+  var map = { 'in': 'id', 'iw': 'he', 'no': 'nb' };
+  function base(tag) {
+    var l = String(tag || '').toLowerCase().split('-')[0];
+    return map[l] || l;
+  }
+  function fromHash() {
+    var h = (location.hash || '').replace('#', '').toLowerCase();
+    return langs.indexOf(h) >= 0 ? h : null;
+  }
+  function fromBrowser() {
+    var list = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language];
+    for (var i = 0; i < list.length; i++) {
+      var l = base(list[i]);
+      if (langs.indexOf(l) >= 0) return l;
+    }
+    return 'en';
+  }
+  function show(l) {
+    langs.forEach(function (x) {
+      var el = document.getElementById(x);
+      if (el) el.hidden = x !== l;
+    });
+    var links = document.querySelectorAll('#langnav a');
+    for (var i = 0; i < links.length; i++) {
+      links[i].className = links[i].getAttribute('href') === '#' + l ? 'active' : '';
+    }
+    document.documentElement.lang = l === 'pt' ? 'pt-BR' : l;
+    window.scrollTo(0, 0);
+  }
+  window.addEventListener('hashchange', function () { var l = fromHash(); if (l) show(l); });
+  show(fromHash() || fromBrowser());
+})();
+</script>
 </body>
 </html>
